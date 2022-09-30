@@ -14,9 +14,9 @@ mma.data$WINNER = as.logical(mma.data$WINNER)
 # Create an FFTrees object from the heartdisease data:
 
 mma.fft <- FFTrees(formula = WINNER ~.,
-                     data = mma.data,
+                   data = mma.data,
                    max.levels = 6,
-                     data.test = mma.data)
+                   data.test = mma.data)
 plot(mma.fft)
 
 mma.fft$competition$test
